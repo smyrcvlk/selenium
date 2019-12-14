@@ -5,14 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<img src="pictures/backgroung/jpegsystems-home.jpg" alt="a home image">
 <form action="/someUrl" method="GET">
     <label for="male">Male</label>
     <input type="radio" name="gender" id="male" value="male"/> <br>
     <label for="female">Female</label>
-    <input type="radio" name="gender" id="female" value="female"/> <br>
-
-    Username: <input type="text" name="username" id="username" value=""/><br/>
-    Password: <input type="password" name="password" id="password" value=""/><br/>
+    <input type="radio" name="gender" id="female" value="female1"/> <br>
+        <textarea name="username">Some text</textarea>
+    <br>
+    <label for="agreement">I agree!</label>
+    <input type="checkbox" id="agreement" checked readonly="true">
+    <br>
+    <select name="cars">
+        <option value="volvo">Volvo car</option>
+        <option value="audi">Audi car</option>
+    </select>
+<br>
+    Username: <input type="text" name="username" id="username" value="user" readonly disabled/><br/>
+    Password: <input type="password" name="password" id="password"/><br/>
+    <input type="image" src="pictures/logo.png">
     <input type="submit" value="Submit"/>
 </form>
 
