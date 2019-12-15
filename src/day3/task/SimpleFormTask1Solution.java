@@ -33,7 +33,6 @@ public class SimpleFormTask1Solution {
             System.out.println("Failure!");
         }
 
-
         driver.quit();
     }
 }
