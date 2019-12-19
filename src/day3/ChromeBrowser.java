@@ -10,9 +10,9 @@ import java.util.List;
 
 public class ChromeBrowser {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+        System.setProperty( "webdriver.chrome.driver", "/Users/sumeyracivelek/Selenium/ChromeDriver/chromedriver" );
         WebDriver driver = new ChromeDriver();
-        driver.get( "file:///D:/Project/seleniumWorking/src/day3/resources/form.html" );
+        driver.get( "http://localhost:63342/selenium/day3/resources/form.html" );
         WebElement text = driver.findElement( By.name( "text" ) );
         text.sendKeys( "This is my text" );
         WebElement password = driver.findElement( By.name( "password" ) );
@@ -55,6 +55,6 @@ public class ChromeBrowser {
         System.out.println( currentUrl );
 
 // close the drive and associated windows
-        driver.quit();
+       // driver.quit();
     }
 }
