@@ -23,17 +23,22 @@ public class CheckBox2 {
         }
 
         WebElement message = driver.findElement(By.id("check1"));
-        String myMessage =message.getAttribute("Uncheck All");
-        if(message.getText().equals( myMessage )){
+        String myMessage ="Uncheck All";
+//        System.out.println(myMessage);
+//        System.out.println(message.getText());
+
+        if(message.getAttribute("value").equals(myMessage)){
 
             System.out.println("success!");
         }else{
             System.out.println("fail");
         }
-        WebElement message2 =driver.findElement(By.id("chec1"));
 
-        String myMessage1 =message2.getAttribute("Check All");
-        if(message2.getText().equals(myMessage1)){
+            WebElement checkbox = driver.findElement( By.id( "check1" ) );
+             checkbox.click();
+        WebElement message2 =driver.findElement(By.id("check1"));
+        String myMessage1 ="Check All";
+        if(message2.getAttribute("value").equals(myMessage1)){
             System.out.println("success!");
         }else{
             System.out.println("fail");
