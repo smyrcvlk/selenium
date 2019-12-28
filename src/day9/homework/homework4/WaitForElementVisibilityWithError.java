@@ -38,13 +38,13 @@ public class WaitForElementVisibilityWithError {
             System.out.println("Failure!");
 
         }
-//        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        try {
-//            // now copy the  screenshot to desired location using copyFile //method
-//            FileUtils.copyFile(src, new File("src/day9/homework/homework4/error_screenshot2.png"));
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            // now copy the  screenshot to desired location using copyFile //method
+            FileUtils.copyFile(src, new File("src/day9/homework/homework4/error_screenshot2.png"));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 

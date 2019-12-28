@@ -26,9 +26,9 @@ public class SimpleFormWithMath {
         String message = "This is the message.";
 
 
-
+        for (int i = 0; i < 3; i++) {
             // inputs
-            driver.findElement(By.xpath("//*[@id=\"et_pb_contact_name_1\"]")).sendKeys(text);
+            driver.findElement(By.xpath("//*[@id=\"et_pb_contact_name_0\"]")).sendKeys(text);
 
             driver.findElement(By.xpath("//*[@id=\"et_pb_contact_message_1\"]")).sendKeys(message);
 
@@ -41,14 +41,14 @@ public class SimpleFormWithMath {
             // submit button
             driver.findElement(By.xpath("//*[@id=\"et_pb_contact_form_1\"]/div[2]/form/div/button")).click();
 
-
+        }
         // validate
         String formText = driver.findElement(By.xpath("//*[@id=\"et_pb_contact_form_1\"]/div[1]/p")).getText();
 
         if(formText.equals("Success")){
             System.out.println("succes message is displayed");
-        }else
+        }else {
             System.out.println("succes message is not displayed");
-
+        }
     }
 }

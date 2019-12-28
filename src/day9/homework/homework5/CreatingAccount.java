@@ -32,6 +32,17 @@ public class CreatingAccount {
 
         WebElement firstname=driver.findElement(By.id("user[first_name]"));
         firstname.sendKeys("sumeyra");
+        WebElement lastname=driver.findElement(By.id("user[last_name]"));
+        lastname.sendKeys("civelek");
+        WebElement email=driver.findElement(By.id("user[email]"));
+        email.sendKeys("smyrcvlk@gmail.com");
+        WebElement password=driver.findElement(By.xpath("//*[@id=\"user[password]\"]"));
+        password.sendKeys("0000000");
+        driver.findElement(By.id("user[terms]")).click();
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
+
+
+
 
     }
 }

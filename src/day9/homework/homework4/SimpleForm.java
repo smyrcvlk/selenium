@@ -31,8 +31,8 @@ public class SimpleForm {
 
         if(element.getText().equals("Form filled out successfully")){
             System.out.println("succes message is displayed");
-        }else
+        }else {
             System.out.println("succes message is not displayed");
-
+        }
     }
 }
