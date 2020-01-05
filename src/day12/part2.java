@@ -37,7 +37,7 @@ public class part2 {
         driver.findElement(By.id("mat-select-2")).click();
         Thread.sleep(3000);
 
-        driver.findElement(By.id("mat-option-24")).click();
+        driver.findElement(By.id("mat-option-30")).click();
 
 //    9.Click on save
 
